@@ -7,12 +7,20 @@ class ViewTemplate extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
             centerTitle: true,
-            title: Text("Mon Panier"),
+            title: GestureDetector(
+                onTap: () {
+                  print("Click on 'panier'");
+                  // here we should redirect to basket (panier) page
+                },
+                child: Text("Mon Panier")),
             actions: <Widget>[
               // action button
               IconButton(
                 icon: Icon(Icons.search),
-                onPressed: () {},
+                onPressed: () {
+                  print("Click on 'search'");
+                  // here we should redirect to search page
+                },
               ),
             ]),
         body: Stack(
@@ -31,10 +39,19 @@ class ViewTemplate extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 height: 100,
                 color: Colors.blueAccent,
-                child: Text(
-                  "Départ train dans: 15:00",
-                textAlign: TextAlign.center, 
-                style: TextStyle(color: Colors.white, fontSize: 30),
+                child: GestureDetector(
+                  onTap: () {
+                    print(
+                        "here we should ask if the visitor want to close the session");
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 20),
+                    child: Text(
+                      "Départ train dans: 15:00",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white, fontSize: 30),
+                    ),
+                  ),
                 ),
               ),
             )
