@@ -62,75 +62,73 @@ class _ViewSearchState extends State<ViewSearch> {
                       splashColor: Color(0xFF025a01),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 10),
+                        margin: EdgeInsets.only(top: 10),
                         child: Center(
-                      child: Card(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            const ListTile(
-                              leading: Icon(Icons.album),
-                              title: Text('Coca Cola'),
-                              subtitle: Text(
-                                  'Bouteille de 50mL de coca cola zero'),
-                            ),
-                            ButtonTheme.bar(
-                              // make buttons use the appropriate styles for cards
-                              child: ButtonBar(
-                                children: <Widget>[
-                                  FlatButton(
-                                    child: const Text('Ajouter au panier'),
-                                    onPressed: () {/* ... */},
+                          child: Card(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                const ListTile(
+                                  leading: Icon(Icons.album),
+                                  title: Text('Coca Cola'),
+                                  subtitle: Text(
+                                      'Bouteille de 50mL de coca cola zero'),
+                                ),
+                                ButtonTheme.bar(
+                                  // make buttons use the appropriate styles for cards
+                                  child: ButtonBar(
+                                    children: <Widget>[
+                                      FlatButton(
+                                        child: const Text('Ajouter au panier'),
+                                        onPressed: () {/* ... */},
+                                      ),
+                                      FlatButton(
+                                        child: const Text('Acheter'),
+                                        onPressed: () {/* ... */},
+                                      ),
+                                    ],
                                   ),
-                                  FlatButton(
-                                    child: const Text('Acheter'),
-                                    onPressed: () {/* ... */},
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
-                      ),
-                    )),
-                             Container(
-                      margin: EdgeInsets.only(top: 10),
+                          ),
+                        )),
+                    Container(
+                        margin: EdgeInsets.only(top: 10),
                         child: Center(
-                      child: Card(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            const ListTile(
-                              leading: Icon(Icons.album),
-                              title: Text('Pain au chocolat'),
-                              subtitle: Text(
-                                  'Pain au chocolat avec des amandes et du chocolat Lindt'),
-                            ),
-                            ButtonTheme.bar(
-                              // make buttons use the appropriate styles for cards
-                              child: ButtonBar(
-                                children: <Widget>[
-                                  FlatButton(
-                                    child: const Text('Ajouter au panier'),
-                                    onPressed: () {/* ... */},
+                          child: Card(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                const ListTile(
+                                  leading: Icon(Icons.album),
+                                  title: Text('Pain au chocolat'),
+                                  subtitle: Text(
+                                      'Pain au chocolat avec des amandes et du chocolat Lindt'),
+                                ),
+                                ButtonTheme.bar(
+                                  // make buttons use the appropriate styles for cards
+                                  child: ButtonBar(
+                                    children: <Widget>[
+                                      FlatButton(
+                                        child: const Text('Ajouter au panier'),
+                                        onPressed: () {/* ... */},
+                                      ),
+                                      FlatButton(
+                                        child: const Text('Acheter'),
+                                        onPressed: () {/* ... */},
+                                      ),
+                                    ],
                                   ),
-                                  FlatButton(
-                                    child: const Text('Acheter'),
-                                    onPressed: () {/* ... */},
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
-                      ),
-                    ))
+                          ),
+                        ))
                   ],
                 ),
               ),
             ),
-
-            
             Positioned(
               bottom: 0.0,
               child: Container(
